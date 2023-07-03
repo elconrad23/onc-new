@@ -20,7 +20,7 @@
 
 <main class="container" style="padding-bottom:0px; margin-top:1.3em; margin-bottom:0px;">
 	<div class="grid" style="padding-bottom:0px; margin-bottom:0px;">
-		<hgroup>
+		<div class="main-content">
 			<h1 style="font-size: larger;"><strong>Our mandate </strong></h1>
 			<p><small>To run and advise on political activities and national affairs in the office of the national chairman, the president.</small></p>
 			<img src={namclap} alt="H.E omalako" />
@@ -35,8 +35,8 @@
 		<h3><strong>Health Of the Nation</strong></h3>
 		<img src={hosting} alt="health"/>
 		<p><small><strong>Progress: </strong>In response to the COVID-19 pandemic, Government committed Ush31.032 billion to support scientists in the local development of COVID-19 vaccines, drugs and diagnostics.</small></p>
-		</hgroup>  
-
+		</div>  
+<div>
 	  <aside style="margin-bottom:0em;">
 		<h3>Updates: </h3>
 		<a href="/" aria-label="Example" onclick="event.preventDefault()"><img src={cmnbs} alt="Crowd"/></a>
@@ -89,6 +89,7 @@
 		</p>
 	  </aside>
 	</div>
+	</div>
   </main>
   <!-- ./ Main -->
 
@@ -101,7 +102,7 @@
 		flex: 0.6;
 	}
 
-	hgroup img{
+	.main-content img{
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
