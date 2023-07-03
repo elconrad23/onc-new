@@ -21,10 +21,11 @@
 <main class="container" style="padding-bottom:0px; margin-top:1.3em; margin-bottom:0px;">
 	<div class="grid" style="padding-bottom:0px; margin-bottom:0px;">
 		<hgroup>
-			<h1 style="font-size: larger;"><strong>Our motivation </strong></h1>
-			<p><small>The mantle of securing the future of Uganda is so great a task for one to play bets on. It is not a gamble and should be entrusted only with an able leader.</small></p>
+			<h1 style="font-size: larger;"><strong>Our mandate </strong></h1>
+			<p><small>To run and advise on political activities and national affairs in the office of the national chairman, the president.</small></p>
 			<img src={namclap} alt="H.E omalako" />
-		  	
+			<p><small>Our motivation: The mantle of securing the future of Uganda is so great a task for one to play bets on. It is not a gamble and should be entrusted only with an able leader.</small></p>
+			
 			<h3 style="font-size: larger;"><strong>Our Jajja's story</strong></h3>
 		  	<img src={chiefmuzu} alt="Hajjat Hadijah and H.E together" />
 		<p><small>

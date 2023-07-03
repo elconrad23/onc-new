@@ -13,17 +13,24 @@
     import play from '/images/icons8-play-26.png';
     import HlsPlayer from "$lib/HlsPlayer.svelte";
 </script>
+
+<form action="/">
+    <div> <input type="text" class="search" placeholder="Search..">
+        <button type="submit" id="search" ><i class="fa fa-search"></i></button>
+    </div>
+</form>
+
 <div class="grid">
     <div>
     <h2> Bika bya Buganda today</h2><br/> 
         <HlsPlayer link="https://readymedia.moderntv.cloud:8092/distribute/readymedia/ONC_Bika_bya_Buganda_vod_7q/20/vod.m3u8"/>
         <br/>
         <p>This Content is licensed and distributed exclusively by Ready Media.</p><br/>
-
+        <p>The ONC Team in Bika bya Buganda for the Endorsement of @KagutaMuseveni come 2026 .🔥🔥. </p>
         <br/>
     </div>
 <div>
-    <p class="caption">Coverage for regions with current feed</p>
+    <p class="caption">All media</p>
     <aside><nav>
         <ul>
             <li><a href="/Bukomansimbi_media">
@@ -44,5 +51,32 @@
     .caption{
         text-align: center;
         position: bottom;
+    }
+
+    .search{
+        float: right;
+        padding: 6px;
+        border: none;
+        margin-top: 8px;
+        margin-right: 16px;
+        font-size: 17px;
+    }
+
+    #search {
+        width: 3.3em;
+        border-radius: 20%;
+        color: #F4C430;
+    }
+
+    @media screen and (max-width: 600px) {
+        input[type=text] {
+            float: none;
+            display: block;
+            text-align: left;
+            width: 100%;
+            margin: 0;
+            padding: 14px;
+            border: 1px solid #ccc;
+        }
     }
 </style>
