@@ -10,7 +10,7 @@
       <article>
         <hgroup>
           <h2>Subscribe</h2>
-          <h3>To our live updates</h3>
+          <h3>for more live feeds</h3>
         </hgroup>
         <form class="grid">
           <input
