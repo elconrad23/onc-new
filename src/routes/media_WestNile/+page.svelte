@@ -31,8 +31,8 @@
             The sub-region is bordered by the Democratic Republic of the Congo to the south and west, by South Sudan to the north and by the Albert Nile to the east. The town of Arua, is the largest town in the sub-region. Arua lies approximately 475 kilometres (295 mi), by road, northwest of Kampala, the capital of Uganda, and the largest city in that country.    
         </p>
         <p><small>What's happening in: </small></p> 
-        <a href="/Buko_media">Bukomansimbi</a><br>
-        <a href="/Bika_media">Bika bya Buganda</a><br>
+        <a href="/Bukomansimbi_media">Bukomansimbi</a><br>
+        <a href="/BikabyaBuganda_media">Bika bya Buganda</a><br>
         <a href="https://www.youtube.com/@onc_nrm">Tap here for the ONC youtube Channel</a><br/>
         </aside>
 </div>

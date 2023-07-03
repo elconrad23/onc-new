@@ -2,7 +2,25 @@
 <script>
   import logo from '/images/onc-logo.jpg';
   import logo1 from '/images/logo.jpg';
+  import { onMount } from 'svelte';
 
+  let showModal = false;
+
+  const toggleModal = () => {
+    showModal = !showModal;
+  };
+
+  onMount(() => {
+    const button = document.querySelector('.modal-button');
+    const modal = document.querySelector('#modal-example');
+
+    button.addEventListener('click', toggleModal);
+    modal.addEventListener('click', (event) => {
+      if (event.target === modal) {
+        toggleModal();
+      }
+    });
+  });
 </script>
 
 <!-- Hero -->
@@ -11,7 +29,6 @@
         <ul>
           <li>
             <a href="./" class="contrast" onclick="event.preventDefault()">
-              <img src={logo} alt="hh" style="height:6em; width:6em; border-radius:20%;"/>
             </a>
           </li>
         </ul>
@@ -21,23 +38,14 @@
               <summary aria-haspopup="listbox" role="link" class="contrast">Menu</summary>
               <ul role="listbox">
                 <li><a href="/">Home</a></li>
-                  <li><details role="list" dir="rtl">
-                    <summary aria-haspopup="listbox" role="link" class="contrast">News</summary>
-                    <ul role="listbox">
-                      <li><a href="/media_WestNile" >West Nile</a></li>
-                      <li><a href="/Buko_media">Bukomansimbi</a></li>
-                      <li><a href="/Bika_media" >Bika bya Buganda</a></li>
-                    </ul>
-                  </details>
-                  </li>
+                <li><a href="/allMediaPage">Media</a>  </li>
                 <li><a href="/about" ><strong>About</strong></a></li>
-                <li><a href="/recent_media" ><strong> Careers</strong></a></li>
                 <li><a href="/">Create Subscriber Account</a></li>
               </ul>
             </details>
           </li>
           <li>
-            <img src={logo1} alt="nrm" style="width: 6em; height:6em; border-radius: 9%;" >
+            <img src={logo} alt="onc" style="height:6em; width:6em; border-radius:20%;"/>
           </li>
         </ul>
        
@@ -46,37 +54,42 @@
         <hgroup>
           <h1>Office of The National Chairman</h1>
           <h2>Making sure your voice is heard everywhere</h2>
+
+          <img src={logo1} alt="nrm" style="height:6em; width:6em; text-align:right; border-radius:20%;"/>
+
         </hgroup> <br>
         
         <!-- Button to trigger the modal -->
-          <button class="contrast" data-target="modal-example" onClick="toggleModal(event)">
+          <!-- <button class="modal-button" data-target="modal-example" onClick="{toggleModal()}">
              ONC Media
-          </button>
-
+          </button> -->
+          <a href="/allMediaPage" role="button" style="background-color: #F4C430;">ONC Media</a>
            <!-- Modal -->
-           <dialog id="modal-example">
-            <article class="modal-content">
-              <a href="#close"
-                aria-label="Close"
-                class="close" data-target="modal-example" onClick="toggleModal(event)">
-              x</a>
-            <h5 id="title">Pick your area of interest</h5>
-            <div class="text-gray-700"><p>Media on today's updates.</p></div>
-            <div>
-              <a href="/media_WestNile" role="button">West Nile</a>
-              <a href="/Bika_media" role="button">Bika bya Buganda</a>
-              <a href="/Buko_media" role="button">Bukomansimbi</a>
-            </div>
-            <footer>
-            <div id="actions">
-              <a href="#cancel"
-              role="button"
-              class="secondary"
-              data-target="modal-example"
-              onClick="toggleModal(event)">Back</a> <br>
-           </div> </footer>
-           </article>
-           </dialog> 
+            {#if showModal}
+              <dialog id="modal-example" open>
+                <article class="modal-content">
+                  <a href="#close"
+                    aria-label="Close"
+                    class="close" data-target="modal-example" onClick="{toggleModal()}">
+                  x</a>
+                  <h5 id="title">Pick your area of interest</h5>
+                  <div class="text-gray-700"><p>Media on today's updates.</p></div>
+                  <div>
+                    <a href="/media_WestNile" role="button">West Nile</a>
+                    <a href="/BikabyaBuganda_media" role="button">Bika bya Buganda</a>
+                    <a href="/Bukomansimbi_media" role="button">Bukomansimbi</a>
+                  </div>
+                <footer>
+                  <div id="actions">
+                  <a href="#cancel"
+                  role="button"
+                  class="secondary"
+                  data-target="modal-example"
+                  onClick= {toggleModal}>Back</a> <br>
+                  </div> </footer>
+                </article>
+              </dialog> 
+            {/if}
     </header>          
   </div>
 

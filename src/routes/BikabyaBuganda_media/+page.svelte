@@ -21,7 +21,7 @@
                 <HlsPlayer link="https://readymedia.moderntv.cloud:8092/distribute/readymedia/ONC_Bika_bya_Buganda_vod_7q/20/vod.m3u8"/>
                 <p>This Content is licensed and distributed exclusively by Ready Media.</p>
             </div>
-            <a href="https://www.youtube.com/@onc_nrm">Tap here for the ONC Channel</a><br/>
+            <a href="https://www.youtube.com/@onc_nrm">ONC youtube Channel</a><br/>
         </hgroup>
     <br/>
     </section>
@@ -32,7 +32,7 @@
             towards the Bika bya Buganda football.
         </p>
         <p><small>What's happening in: </small></p> 
-        <a href="/Buko_media">Bukomansimbi</a><br>
+        <a href="/Bukomansimbi_media">Bukomansimbi</a><br>
         <a href="/media_WestNile">West Nile</a><br>
     </aside>
 </div>

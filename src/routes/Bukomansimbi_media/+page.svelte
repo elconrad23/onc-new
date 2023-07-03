@@ -21,7 +21,7 @@
         <p>This Content is licensed and distributed exclusively by Ready Media.</p>
     </div><br>
 
-    <a href="https://www.youtube.com/@onc_nrm">Tap here for the ONC Channel</a><br/>
+    <a href="https://www.youtube.com/@onc_nrm">ONC youtube Channel</a><br/>
 </hgroup>
 
     <aside>
@@ -31,7 +31,7 @@
         </p>
         <p><small>What's happening in: </small></p> <br>
         <a href="/media_WestNile">West Nile</a><br>
-        <a href="/Bika_media">Bika bya Buganda</a><br>
+        <a href="/BikabyaBuganda_media">Bika bya Buganda</a><br>
     </aside>
 
 <style>
