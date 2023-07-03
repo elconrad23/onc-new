@@ -7,7 +7,7 @@
 <!-- Hero -->
 <header class="container">
     <div class="hero" data-theme="dark" style="width:100%;">
-      <nav class="container-fluid" style="display: flex; width:100%; padding-left:5.3em; margin-right:4.7em;">
+      <nav class="container-fluid" style="display: flex; width:100%; padding-left:0.3em; margin-right:1.7em;">
         <ul>
           <li>
             <a href="./" class="contrast" onclick="event.preventDefault()">
@@ -29,23 +29,14 @@
           <li>
             <img src={logo} alt="onc" style="height:6em; width:6em; border-radius:20%;"/>
           </li>
+          <li><h1 style="padding-bottom: 0em;">Office of The National Chairman</h1>
+          <h2>Making sure your voice is heard everywhere</h2><br>
+          </li>
+          <li><img src={logo1} alt="nrm" style="height:6em; width:6em; border-radius:20%;"/></li><br>
+          <li><a href="/allMediaPage" role="button" style="background-color: #F4C430;">ONC Media</a></li>
+
         </ul>
-         <div>
-          <h1>Office of The National Chairman</h1>
-          <h2>Making sure your voice is heard everywhere</h2>
-
-          <img src={logo1} alt="nrm" style="height:6em; width:6em; border-radius:20%;"/>
-          <a href="/allMediaPage" role="button" style="background-color: #F4C430;">ONC Media</a>
-
-        </div> <br>
       </nav>
-      
-        
-        <!-- Button to trigger the modal -->
-          <!-- <button class="modal-button" data-target="modal-example" onClick="{toggleModal()}">
-             ONC Media
-          </button> -->
-          
   </div>
   </header>          
 
@@ -57,22 +48,19 @@
         background-color: #F4C430;
         background: linear-gradient(to top, #041dfdb4, #fa073c25), url("/images/omalako.jpeg") no-repeat center center;
         background-position: center;
-        -webkit-background-size: contain;
-        -moz-background-size: contain;
-        -o-background-size: contain;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
         background-size: contain;
         width:100%;
       }
 
-      .container{
-        padding-bottom: 1.3em;
+      h2{
+        color: #F4C430;
       }
-
       header {
-        padding: 0.63em;
-        padding-left: 0cm;
-        margin-bottom: 0cm;
-        margin-left: 4.7em;
+        margin-bottom: 3.06em;
+        padding-bottom: 3.06em;
         width:100%;
       }
 
