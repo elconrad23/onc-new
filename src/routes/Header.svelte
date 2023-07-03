@@ -55,7 +55,7 @@
           <h1>Office of The National Chairman</h1>
           <h2>Making sure your voice is heard everywhere</h2>
 
-          <img src={logo1} alt="nrm" style="height:6em; width:6em; text-align:right; border-radius:20%;"/>
+          <img src={logo1} alt="nrm" style="height:6em; width:6em; border-radius:20%;"/>
 
         </hgroup> <br>
         
@@ -125,6 +125,10 @@
       }
 
       header hgroup {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        
         margin-bottom: var(--spacing-company);
       }
 

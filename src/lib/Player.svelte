@@ -20,6 +20,7 @@
 <div>
   <video class="video-js" controls height="360" id="my-video" preload="auto" width="640">
     <source src="{link}" type="application/x-mpegURL">
+      <track kind="captions"/>
     <!-- Add additional sources for different formats if desired -->
   </video>
 </div>
