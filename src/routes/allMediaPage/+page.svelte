@@ -12,6 +12,9 @@
     import tabicon from '/images/icons8-uganda-48.png';	
     import play from '/images/icons8-play-26.png';
     import HlsPlayer from "$lib/HlsPlayer.svelte";
+    import bika from '/images/bika.png';
+    import west from '/images/west.png';
+    import buko from '/images/buko.png';
 </script>
 
 <form action="/">
@@ -26,28 +29,41 @@
         <HlsPlayer link="https://readymedia.moderntv.cloud:8092/distribute/readymedia/ONC_Bika_bya_Buganda_vod_7q/20/vod.m3u8"/>
         <br/>
         <p>This Content is licensed and distributed exclusively by Ready Media.</p><br/>
-        <p>The ONC Team in Bika bya Buganda for the Endorsement of @KagutaMuseveni come 2026 .🔥🔥. </p>
-        <br/>
+        <p>
+            <a href="/future_media">Set alert for future event</a>
+        </p> <br/>
     </div>
 <div>
     <p class="caption">All media</p>
     <aside><nav>
-        <ul>
+        <ul><li><ul>
+            <li>
+                <img src="{buko}" alt="thumbnail" style="width:12em; height:6.13em;"/>
+            </li>
             <li><a href="/Bukomansimbi_media">
                 <img src={play} alt="play" style="width:2em; height:2.13em; border-radius: 9%;" />
-                Bukomansimbi</a> <br/></li> 
-            <li><a href="/BikabyaBuganda_media">
+                Bukomansimbi</a>  <br/></li></ul>
+            </li><br/>
+            <ul>
+                <li>
+                    <img src="{bika}" alt="thumbnail" style="width:12em; height:6.13em;"/>
+                </li><li><a href="/BikabyaBuganda_media">
                 <img src={play} alt="play" style="width: 2em; height:2.13em; border-radius: 9%;" />
-                Bika bya Buganda</a></li><br/>
-            <li> <a href="/media_WestNile">
+                Bika bya Buganda</a> <br/></li></ul>
+           <br/>
+            <ul>
+                <li>
+                    <img src="{west}" alt="thumbnail" style="width:12em; height:6.13em;"/>
+                </li><li> <a href="/media_WestNile">
                 <img src={play} alt="play" style="width: 2em; height:2.13em; border-radius: 9%;" />
-                West Nile</a><br/></li><br/>
+                West Nile</a></li></ul><br/>
             <a href="https://www.youtube.com/@onc_nrm">ONC youtube Channel</a>
             <br/>
 </ul></nav></aside></div></div>
 
 
 <style>
+    
     .caption{
         text-align: center;
         position: bottom;
@@ -56,6 +72,7 @@
     .search{
         float: right;
         padding: 6px;
+        width:50%;
         border: none;
         margin-top: 8px;
         margin-right: 16px;

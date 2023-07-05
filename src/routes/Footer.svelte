@@ -6,7 +6,6 @@
  
   <!-- Footer -->
   <footer class="container">
-    <section class="aria-label">
       <article>
         <hgroup>
           <h2>Subscribe</h2>
@@ -33,7 +32,6 @@
           <button type="submit" onclick="event.preventDefault()" style="border-radius:9%; border-color:transparent; background-color:#F4C430;">Subscribe</button>
         </form>
       </article>
-    </section>
   <!-- ./ Subscribe -->
 
     <small>Copyright © 2023 of <a href="/">Office of the National Chairman</a> •</small>

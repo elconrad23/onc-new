@@ -18,10 +18,12 @@
 
 <style>
   @import 'video.js/dist/video-js.css';
+
+
 </style>
 
 <div>
-  <video class="video-js" controls height="360" id="my-video" preload="auto" width="640" bind:this={videoElement}>
+  <video class="video-js" controls id="my-video" preload="auto" bind:this={videoElement}>
     <source src="{link}" type="application/x-mpegURL">
     <track kind="captions" label="English Captions" src="" default>
     <!-- Add additional sources for different formats if desired -->

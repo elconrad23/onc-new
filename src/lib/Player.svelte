@@ -18,7 +18,7 @@
 </style>
 
 <div>
-  <video class="video-js" controls height="360" id="my-video" preload="auto" width="640">
+  <video class="video-js" controls id="my-video" preload="auto" style="width:100%; height:auto;">
     <source src="{link}" type="application/x-mpegURL">
       <track kind="captions"/>
     <!-- Add additional sources for different formats if desired -->

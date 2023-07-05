@@ -3,6 +3,8 @@
 <script>
     import HlsPlayer from "$lib/HlsPlayer.svelte";
     import play from '/images/icons8-play-26.png';
+    import bika from '/images/bika.png';
+    import buko from '/images/buko.png';
 </script>
 
 <svelte:head>
@@ -26,29 +28,37 @@
     <div>
         <h2> West Nile today</h2>
         <!--<Player/>-->
-        <HlsPlayer link="https://readymedia.moderntv.cloud:8092/distribute/readymedia/ONC_WestNile_vod_px/20/vod.m3u8" />
-        <p>Hajjat Hadijah Namyalo addressing the people of Arua district.</p><br/>
-        <p>This Content is licensed and distributed exclusively by Ready Media.</p><br/>
+        <HlsPlayer  link="https://readymedia.moderntv.cloud:8092/distribute/readymedia/ONC_WestNile_vod_px/20/vod.m3u8" />
+        <p>Hajjat Hadijah Namyalo dancing to the tunes of the people of Arua district.</p>
+        <p>This Content is licensed and distributed exclusively by Ready Media.</p>
         <p>Posted on: 02-07-2023</p>
-
+        <p>
+            <a href="/future_media">Set alert for future event</a>
+        </p>
         <h4> About the West Nile.</h4>
         <p>
             The sub-region is bordered by the Democratic Republic of the Congo to the south and west, by South Sudan to the north and by the Albert Nile to the east. The town of Arua, is the largest town in the sub-region. Arua lies approximately 475 kilometres (295 mi), by road, northwest of Kampala, the capital of Uganda, and the largest city in that country.    
         </p><br/>
+
     </div>
     <div>
         <p class="caption">What's happening in: </p> 
         <aside><nav>
-            <ul>
+            <ul><li><ul>
+                <li>
+                    <img src="{buko}" alt="thumbnail" style="width:12em; height:6.13em;"/>
+                </li>
                 <li><a href="/Bukomansimbi_media">
                     <img src={play} alt="play" style="width:2em; height:2.13em; border-radius: 9%;" />
-                    Bukomansimbi</a> <br/></li> 
-                <li><a href="/BikabyaBuganda_media">
+                    Bukomansimbi</a> <br/></li></ul>
+                </li><br/>
+                <ul>
+                    <li>
+                        <img src="{bika}" alt="thumbnail" style="width:12em; height:6.13em;"/>
+                    </li><li><a href="/BikabyaBuganda_media">
                     <img src={play} alt="play" style="width: 2em; height:2.13em; border-radius: 9%;" />
-                    Bika bya Buganda</a></li><br/>
-                
-                <a href="https://www.youtube.com/@onc_nrm">ONC youtube Channel</a>
-                <br/>
+                    Bika bya Buganda</a></li></ul><br/>
+                    <br/>
     </ul></nav></aside></div>
 </div>
 
@@ -64,6 +74,7 @@
         margin-top: 8px;
         margin-right: 16px;
         font-size: 17px;
+        width: 50%;
     }
 
     #search {

@@ -2,6 +2,9 @@
 <script>
     import HlsPlayer from "$lib/HlsPlayer.svelte";
     import play from '/images/icons8-play-26.png';
+    import west from '/images/west.png';
+    import buko from '/images/buko.png';
+
 </script>
 
 <svelte:head>
@@ -28,25 +31,34 @@
             <br/>
         <p>This Content is licensed and distributed exclusively by Ready Media.</p><br/>
         <p>Posted on: 02-07-2023</p>
-
+        <p>
+            <a href="/future_media">Set alert for future event</a>
+        </p>
         <h4> About Bika bya Buganda, home of Bika bya Buganda tournament.</h4>
         <p>
             President Yoweri Kaguta Museveni who also doubles as the ruling NRM party chairman, has contributed shs20m
             towards the Bika bya Buganda football.
         </p><br/>
+        
     </div>
     <div>
         <p class="caption">What's happening in: </p> 
         <aside><nav>
             <ul>
-                
+                <li><ul>
+                    <li>
+                        <img src="{buko}" alt="thumbnail" style="width:12em; height:6.13em;"/>
+                    </li>
                 <li><a href="/Bukomansimbi_media">
                     <img src={play} alt="play" style="width:2em; height:2.13em; border-radius: 9%;" />
-                    Bukomansimbi</a> <br/></li> 
-                <li> <a href="/media_WestNile">
+                    Bukomansimbi</li></ul>
+                </li><br/>
+                <ul>
+                    <li>
+                        <img src="{west}" alt="thumbnail" style="width:12em; height:6.13em;"/>
+                    </li><li><a href="/media_WestNile">
                     <img src={play} alt="play" style="width: 2em; height:2.13em; border-radius: 9%;" />
-                    West Nile</a><br/></li><br/>
-                <a href="https://www.youtube.com/@onc_nrm">ONC youtube Channel</a>
+                    West Nile</a><br/></li></ul><br/>
                 <br/>
 
     </ul></nav></aside></div>
@@ -64,6 +76,7 @@
         margin-top: 8px;
         margin-right: 16px;
         font-size: 17px;
+        width: 50%;
     }
 
     #search {
