@@ -13,13 +13,12 @@
 <a href="https://www.youtube.com/@onc_nrm">Tap here for the ONC Channel</a><br/>
 
 <span class="ytvideos">
-<iframe width="420" height="315" title="player" autoplay
-src="https://www.youtube.com/watch?v=ngkFxQme0Po">
-</iframe>
-<iframe width="420" height="315" title="player" autoplay
-src="https://www.youtube.com/watch?v=ngkFxQme0Po">
-</iframe>
-<iframe width="420" height="315" title="player" autoplay
-src="https://www.youtube.com/watch?v=ngkFxQme0Po">
-</iframe>
+    <input type="date"> 
+    <input type="submit" value="Set" style="color: #F4C430; border-radius:9%; width:9em;">
 </span>
+
+<style>
+    .ytvideos{
+        text-align: center;
+    }
+</style>

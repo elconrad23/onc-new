@@ -1,5 +1,5 @@
 <svelte:head>
-	<title>ONC • Ug</title>
+	<title>ONC • Uganda</title>
     <meta name="description" content="A classic government company. Built with CSS." />
     <link rel="icon" href={tabicon} type="image/png"/>
     <link rel="canonical" href="https://picocss.com/examples/company/" />
@@ -18,8 +18,8 @@
 </script>
 
 <form action="/">
-    <div> <input type="text" class="search" placeholder="Search..">
-        <button type="submit" id="search" ><i class="fa fa-search"></i></button>
+    <div> 
+        <input type="text" class="search" placeholder="Search..">
     </div>
 </form>
 
@@ -28,7 +28,7 @@
     <h2> Bika bya Buganda today</h2><br/> 
         <HlsPlayer link="https://readymedia.moderntv.cloud:8092/distribute/readymedia/ONC_Bika_bya_Buganda_vod_7q/20/vod.m3u8"/>
         <br/>
-        <p>This Content is licensed and distributed exclusively by Ready Media.</p><br/>
+        <p>This Content is licensed and distributed exclusively by Ready Media Africa.</p><br/>
         <p>
             <a href="/future_media">Set alert for future event</a>
         </p> <br/>
@@ -38,25 +38,30 @@
     <aside><nav>
         <ul><li><ul>
             <li>
+                <a href="/Bukomansimbi_media">
                 <img src="{buko}" alt="thumbnail" style="width:12em; height:6.13em;"/>
-            </li>
+                </a></li>
             <li><a href="/Bukomansimbi_media">
                 <img src={play} alt="play" style="width:2em; height:2.13em; border-radius: 9%;" />
                 Bukomansimbi</a>  <br/></li></ul>
             </li><br/>
             <ul>
                 <li>
+                    <a href="/BikabyaBuganda_media">
                     <img src="{bika}" alt="thumbnail" style="width:12em; height:6.13em;"/>
-                </li><li><a href="/BikabyaBuganda_media">
+                    </a></li>
+                <li><a href="/BikabyaBuganda_media">
                 <img src={play} alt="play" style="width: 2em; height:2.13em; border-radius: 9%;" />
                 Bika bya Buganda</a> <br/></li></ul>
            <br/>
             <ul>
                 <li>
+                    <a href="/media_WestNile">
                     <img src="{west}" alt="thumbnail" style="width:12em; height:6.13em;"/>
-                </li><li> <a href="/media_WestNile">
-                <img src={play} alt="play" style="width: 2em; height:2.13em; border-radius: 9%;" />
-                West Nile</a></li></ul><br/>
+                    </a></li><li> <a href="/media_WestNile">
+                    <img src={play} alt="play" style="width: 2em; height:2.13em; border-radius: 9%;" />
+                    West Nile</a></li>
+            </ul><br/>
             <a href="https://www.youtube.com/@onc_nrm">ONC youtube Channel</a>
             <br/>
 </ul></nav></aside></div></div>
@@ -72,18 +77,14 @@
     .search{
         float: right;
         padding: 6px;
-        width:50%;
-        border: none;
+        width:19em;
+        border: 1px aquamarine;
+        border-radius: 9%;
         margin-top: 8px;
         margin-right: 16px;
-        font-size: 17px;
+        font-size: 1px;
     }
 
-    #search {
-        width: 3.3em;
-        border-radius: 20%;
-        color: #F4C430;
-    }
 
     @media screen and (max-width: 600px) {
         input[type=text] {

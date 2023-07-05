@@ -19,6 +19,10 @@
 <style>
   @import 'video.js/dist/video-js.css';
 
+  #my-video{
+    width: 63em;
+    height: auto;
+  }
 
 </style>
 

@@ -32,7 +32,7 @@
     <style>
       /* Header */
       header {
-        margin-bottom: 3.06em;
+        margin-bottom: 1.06em;
         padding-bottom: 3.06em;
         background-position: center;
         -webkit-background-size: cover;
@@ -45,7 +45,7 @@
 
       .container-a {
         background-color: #F4C430;
-        background: linear-gradient(to top, #041dfdb4, #fa073c25), url("/images/omalako.jpeg") no-repeat center center;
+        background: linear-gradient(to top, #04fdd3b4, #1707fa65), url("/images/omalako.jpeg") no-repeat center center;
         background-position: center;
         background-size: cover;
         -webkit-background-size: cover;
@@ -58,7 +58,7 @@
       .header-left{
         float: left;  
         margin-top: 6.3em;
-        margin-left:3.3em;
+        padding-left:3.3em;
         width:fit-content;
       }
 

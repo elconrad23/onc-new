@@ -30,7 +30,7 @@
         <!--<Player/>-->
         <HlsPlayer  link="https://readymedia.moderntv.cloud:8092/distribute/readymedia/ONC_WestNile_vod_px/20/vod.m3u8" />
         <p>Hajjat Hadijah Namyalo dancing to the tunes of the people of Arua district.</p>
-        <p>This Content is licensed and distributed exclusively by Ready Media.</p>
+        <p>This Content is licensed and distributed exclusively by Ready Media Africa.</p>
         <p>Posted on: 02-07-2023</p>
         <p>
             <a href="/future_media">Set alert for future event</a>
@@ -45,21 +45,27 @@
         <p class="caption">What's happening in: </p> 
         <aside><nav>
             <ul><li><ul>
-                <li>
+                <li><a href="/Bukomansimbi_media">
                     <img src="{buko}" alt="thumbnail" style="width:12em; height:6.13em;"/>
-                </li>
+                </a></li>
                 <li><a href="/Bukomansimbi_media">
                     <img src={play} alt="play" style="width:2em; height:2.13em; border-radius: 9%;" />
                     Bukomansimbi</a> <br/></li></ul>
                 </li><br/>
                 <ul>
                     <li>
+                        <a href="/BikabyaBuganda_media">
                         <img src="{bika}" alt="thumbnail" style="width:12em; height:6.13em;"/>
-                    </li><li><a href="/BikabyaBuganda_media">
-                    <img src={play} alt="play" style="width: 2em; height:2.13em; border-radius: 9%;" />
-                    Bika bya Buganda</a></li></ul><br/>
+                        </a></li>
+                    <li>
+                        <a href="/BikabyaBuganda_media">
+                        <img src={play} alt="play" style="width: 2em; height:2.13em; border-radius: 9%;" />
+                        Bika bya Buganda</a>
+                    </li></ul><br/>
                     <br/>
-    </ul></nav></aside></div>
+            </ul>
+        </nav></aside>
+    </div>
 </div>
 
 <style>

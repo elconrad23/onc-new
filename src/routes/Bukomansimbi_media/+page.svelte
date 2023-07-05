@@ -7,7 +7,7 @@
 </script>
 
 <svelte:head>
-	<title>ONC • Ug</title>
+	<title>ONC • Uganda</title>
     <meta name="description" content="A classic government company. Built with CSS." />
     <!-- Default theme. ~960B -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@vime/core@^5/themes/default.css"/>
@@ -18,17 +18,19 @@
 </svelte:head>
 
 <form action="/">
-    <div> <input type="text" class="search" placeholder="Search..">
-        <button type="submit" id="search" ><i class="fa fa-search"></i></button>
+    <div> 
+        <input type="text" class="search" placeholder="Search..">
     </div>
 </form>
 
 <div class="grid">
     <div >
         <h2> Bukoma Nsimbi today</h2>
+        <span>
         <HlsPlayer link="https://readymedia.moderntv.cloud:8092/distribute/readymedia/ONC_Bukomansimbi_vod_nm/20/vod.m3u8" /><br>
+        </span>
         <p>Womens' day in Bukomansimbi district.</p>
-        <p>This Content is licensed and distributed exclusively by Ready Media.</p>
+        <p>This Content is licensed and distributed exclusively by Ready Media Africa.</p>
         <p>Posted on: 02-07-2023</p>
         <p>
             <a href="/future_media">Set alert for future event</a>
@@ -43,7 +45,9 @@
            <aside><nav> <ul>
                 <li><ul>
                     <li>
+                        <a href="/BikabyaBuganda_media">
                         <img src="{bika}" alt="thumbnail" style="width:12em; height:6.13em;"/>
+                        </a>
                     </li>
                     <li><a href="/BikabyaBuganda_media">
                     <img src={play} alt="play" style="width: 2em; height:2.13em; border-radius: 9%;" />
@@ -51,7 +55,9 @@
                     </li><br/>
                 <ul>
                     <li>
+                        <a href="/media_WestNile">
                         <img src={west} alt="thumbnail" style="width:12em; height:6.13em;"/>
+                        </a>
                     </li><li> <a href="/media_WestNile">
                     <img src={play} alt="play" style="width: 2em; height:2.13em; border-radius: 9%;" />
                     West Nile</a><br/></li></ul><br/>
@@ -68,18 +74,15 @@
     .search{
         float: right;
         padding: 6px;
-        border: none;
+        width:19em;
+        border: 1px aquamarine;
+        border-radius: 9%;
         margin-top: 8px;
         margin-right: 16px;
-        font-size: 17px;
-        width: 50%;
+        font-size: 19px;
     }
 
-    #search {
-        width: 3.3em;
-        border-radius: 20%;
-        color: #F4C430;
-    }
+
 
     @media screen and (max-width: 600px) {
         input[type=text] {

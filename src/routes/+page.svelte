@@ -10,7 +10,7 @@
 </script>
 
 <svelte:head>
-	<title>ONC • Ug</title>
+	<title>ONC • Uganda</title>
     <meta name="description" content="A classic government company. Built with CSS." />
 
 	<!--Just for referrence purpose -->
@@ -38,7 +38,7 @@
 		</div>  
 <div>
 	  <aside style="margin-bottom:0em;">
-		<h3>Updates: </h3>
+		<h5>Updates: </h5>
 		<a href="/" aria-label="Example" onclick="event.preventDefault()"><img src={cmnbs} alt="Crowd"/></a>
 		<figure>
 			<figcaption>
@@ -109,7 +109,7 @@
 		align-items: center;
 	}
 
-	h1, h3 {
+	h1, h5 {
 		text-align: center;
 		color: #26619C;
 		font-weight: bold;
